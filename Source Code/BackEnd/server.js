@@ -1,4 +1,5 @@
 const express = require('express');
+require('dotenv').config();
 const app = express();
 
 app.get('/', (req, res) => {
@@ -12,4 +13,4 @@ const userRouter = require('./routes/users');
 
 app.use('/users' , userRouter);
 
-app.listen(8080)
+app.listen(process.env.PORT);
