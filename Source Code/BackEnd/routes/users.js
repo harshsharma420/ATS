@@ -5,13 +5,21 @@ router.get("/", (req, res) => {
     res.send("User List");
 });
 
-router.post('/', (req, res) => {
+router.post('/new', (req, res) => {
     res.send("New User");
 });
 
-router.get('/:id', (req , res) => {
+router.get('/:id', (req, res) => {
     // req.params.id
-    res.send("User Get")
+    res.send("User Get");
+});
+
+router.put('/:id', (req, res) => {
+    res.send("User Updated");
+});
+
+router.delete('/:id', (req, res) => {
+    res.send("User Deleted");
 });
 
 
