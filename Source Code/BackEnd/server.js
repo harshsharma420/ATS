@@ -9,11 +9,11 @@ app.get('/', (req, res) => {
     // res.json({ message: "Error"});
 });
 
-const userRouter = require('./routes/users');
+// const userRouter = require('./routes/users');
 const resumesRouter = require('./routes/resumes');
 
 app.use(express.json());
-app.use('/users', userRouter);
+// app.use('/users', userRouter);
 app.use('/resumes', resumesRouter);
 
 app.listen(process.env.PORT);
