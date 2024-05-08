@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
 const multer = require('multer');
-const upload = multer({ dest: '../userUploadedResumes/'})
+const upload = multer({ dest: 'userUploadedResumes/' });
 
-router.post('/newResume', (req, res) => {
+router.post('/newResume', upload.single('file'), (req, res) => {
     res.send("file recieved");
 });
 
