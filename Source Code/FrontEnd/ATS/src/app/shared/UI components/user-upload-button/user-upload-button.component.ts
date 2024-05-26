@@ -9,5 +9,8 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./user-upload-button.component.scss']
 })
 export class UserUploadButtonComponent {
-  @Input() task?: string;
+  // @Input() task?: string;
+  uploadFile(){
+    console.log("File Uploaded Successfully");
+  }
 }
