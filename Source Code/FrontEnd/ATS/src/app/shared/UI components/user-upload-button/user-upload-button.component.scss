@@ -6,11 +6,12 @@
 
     button {
         padding: 1em 2em;
-        border-radius: 1em;
-        border: 1px none white ;
-        background-color: slateblue;
-        color: white;
-        box-shadow: 0.1em 0.1em 10px black;
+        // border-radius: 1em;
+        border: 2px solid black ;
+        background-color: rgb(164, 151, 245);
+        // color: white;
+        font-weight: bold;
+        // box-shadow: 0.1em 0.1em 10px black;
     }
     
     button:active{
